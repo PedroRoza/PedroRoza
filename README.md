@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo-without-bg.png" width="90" alt="Pedro Rosa logo" />
+<img src="public/logo.png" width="90" alt="Pedro Rosa logo" />
 
 # Pedro Rosa — Portfólio
 
