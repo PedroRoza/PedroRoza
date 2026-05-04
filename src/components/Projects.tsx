@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useInView } from '../hooks/useInView';
 import { projects, type Project } from '../data/projects';
 
@@ -32,6 +33,7 @@ function BrowserMockup({ project }: { project: Project }) {
 
 /* ── Projects Section ────────────────────────────────────────── */
 export default function Projects() {
+  const { t } = useTranslation();
   const { ref, inView } = useInView();
 
   return (
@@ -41,13 +43,13 @@ export default function Projects() {
         <div className={`fade-up ${inView ? 'in-view' : ''} mb-14`}>
           <span className="inline-flex items-center gap-2 text-accent font-semibold text-sm mb-3">
             <span className="w-6 h-px bg-primary inline-block" />
-            Projetos
+            {t('projects.label')}
           </span>
           <h2 className="text-4xl font-extrabold text-dark mb-2">
-            Trabalhos selecionados
+            {t('projects.title')}
           </h2>
           <p className="text-gray-500 max-w-lg text-base leading-relaxed">
-            Uma seleção de projetos que demonstram minha capacidade técnica e visão de produto.
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -74,7 +76,7 @@ export default function Projects() {
 
                 {/* Description */}
                 <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  {project.description}
+                  {t(project.descKey)}
                 </p>
 
                 {/* Footer: tags + link */}
@@ -95,7 +97,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-primary font-semibold text-sm hover:text-accent transition-colors duration-200"
                   >
-                    Visitar site
+                    {t('projects.visit')}
                     <ExternalLink size={13} />
                   </a>
                 </div>

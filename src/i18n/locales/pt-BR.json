@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "role": "Full Stack Developer",
+    "greeting": "Olá, eu sou",
+    "tagline": "Desenvolvedor full-stack, transformo ideias em experiências digitais memoráveis. Código limpo, design cuidadoso e performático utilizando tecnologia de ponta.",
+    "cta_projects": "Ver Projetos",
+    "cta_contact": "Entrar em Contato"
+  },
+  "about": {
+    "label": "Sobre mim",
+    "title": "Quem está por trás do código",
+    "bio1": "Sou um desenvolvedor full-stack brasileiro com experiência em projetos de diferentes escalas — de sites institucionais a plataformas SaaS complexas. Já trabalhei em agências digitais e de forma independente para clientes de diversas áreas.",
+    "bio2": "Me preocupo com cada detalhe: desde a arquitetura do backend até a micro-animação que torna a interface mais fluida. Acredito que bom software é aquele que resolve problemas reais com elegância.",
+    "bio3": "Quando não estou codando, estou estudando design ou explorando novas tecnologias.",
+    "stat_years": "Anos de experiência",
+    "stat_projects": "Projetos entregues",
+    "stat_agencies": "Agências parceiras",
+    "stack_title": "Stack & Ferramentas",
+    "group_frameworks": "Frameworks",
+    "group_languages": "Linguagens",
+    "group_database": "Database",
+    "group_devops": "DevOps",
+    "group_ai": "IA"
+  },
+  "projects": {
+    "label": "Projetos",
+    "title": "Trabalhos selecionados",
+    "subtitle": "Uma seleção de projetos que demonstram minha capacidade técnica e visão de produto.",
+    "visit": "Visitar site",
+    "sindfaz_desc": "Site institucional do Sindicato dos Trabalhadores do Ministério da Fazenda, com área de notícias, comunicados e acesso a serviços para servidores.",
+    "calculacivil_desc": "Plataforma de cálculo estrutural para engenheiros civis, com ferramentas de dimensionamento, verificação de estruturas e geração de relatórios técnicos.",
+    "j8_desc": "Site completo para imobiliária com listagem de imóveis, busca avançada por filtros, integração de CRM e apresentação de empreendimentos.",
+    "medel_desc": "Portal institucional da MED-EL para os mercados austríaco e alemão — empresa líder global em implantes cocleares e soluções auditivas."
+  },
+  "contact": {
+    "label": "Contato",
+    "title": "Vamos construir algo juntos?",
+    "subtitle": "Estou aberto a novas oportunidades, projetos freelance e conversas sobre tecnologia. Me manda uma mensagem!"
+  },
+  "footer": {
+    "made_with": "Feito com React & Tailwind CSS."
+  }
+}

@@ -1,4 +1,5 @@
 import { Mail, Phone } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useInView } from '../hooks/useInView';
 import RoseLogo from './ui/RoseLogo';
 
@@ -19,15 +20,12 @@ function LinkedinIcon({ size = 18 }: { size?: number }) {
 }
 
 export default function Contact() {
+  const { t } = useTranslation();
   const { ref, inView } = useInView();
 
   return (
-    <section
-      id="contato"
-      className="py-24 bg-dark relative overflow-hidden"
-      ref={ref}
-    >
-      {/* Decorative rose — blurred, very subtle */}
+    <section id="contato" className="py-24 bg-dark relative overflow-hidden" ref={ref}>
+      {/* Decorative rose */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 opacity-[0.06] pointer-events-none">
         <RoseLogo size={460} />
       </div>
@@ -37,16 +35,12 @@ export default function Contact() {
         <div className={`fade-up ${inView ? 'in-view' : ''}`}>
           <span className="inline-flex items-center justify-center gap-2 text-accent font-semibold text-sm mb-4">
             <span className="w-6 h-px bg-primary inline-block" />
-            Contato
+            {t('contact.label')}
             <span className="w-6 h-px bg-primary inline-block" />
           </span>
-
-          <h2 className="text-4xl font-extrabold text-white mb-4">
-            Vamos construir algo juntos?
-          </h2>
+          <h2 className="text-4xl font-extrabold text-white mb-4">{t('contact.title')}</h2>
           <p className="text-white/55 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Estou aberto a novas oportunidades, projetos freelance e conversas sobre tecnologia.
-            Me manda uma mensagem!
+            {t('contact.subtitle')}
           </p>
         </div>
 

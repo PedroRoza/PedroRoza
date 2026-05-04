@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
+  const { t } = useTranslation();
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -32,23 +34,23 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto px-6 w-full py-20 grid md:grid-cols-2 gap-12 items-center">
-        {/* ── Left: text ── */}
-        <div>
+      <div className="max-w-6xl mx-auto px-6 w-full py-8 md:py-20 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        {/* ── Left: text (desktop) / top (mobile) ── */}
+        <div className="flex flex-col">
           {/* Label */}
           <span
             className={`fade-up ${loaded ? 'in-view' : ''} inline-flex items-center gap-2 text-accent font-semibold text-sm mb-5`}
           >
             <span className="w-6 h-px bg-primary inline-block" />
-            Full Stack Developer
+            {t('hero.role')}
           </span>
 
           {/* Heading */}
           <h1
-            className={`fade-up ${loaded ? 'in-view' : ''} text-5xl md:text-[3.5rem] font-extrabold text-dark leading-[1.1] mb-5`}
+            className={`fade-up ${loaded ? 'in-view' : ''} text-4xl md:text-[3.5rem] font-extrabold text-dark leading-[1.1] mb-5`}
             style={{ transitionDelay: '80ms' }}
           >
-            Olá, eu sou
+            {t('hero.greeting')}
             <br />
             <span
               style={{
@@ -64,36 +66,58 @@ export default function Hero() {
 
           {/* Tagline */}
           <p
-            className={`fade-up ${loaded ? 'in-view' : ''} text-gray-500 text-lg leading-relaxed mb-9 max-w-md`}
+            className={`fade-up ${loaded ? 'in-view' : ''} text-gray-500 text-base md:text-lg leading-relaxed mb-0 md:mb-9 max-w-md`}
             style={{ transitionDelay: '160ms' }}
           >
-            Desenvolvedor full-stack, transformo ideias em experiências digitais memoráveis.
-            Código limpo, design cuidadoso e performático utilizando tecnologia de ponta.
+            {t('hero.tagline')}
           </p>
+
+          {/* ── Rose: mobile only (between text and buttons) ── */}
+          <div
+            className={`fade-in ${loaded ? 'in-view' : ''} flex md:hidden justify-center items-center my-8`}
+            style={{ transitionDelay: '100ms' }}
+          >
+            <div className="relative">
+              <div
+                className="absolute inset-0 rounded-full animate-glow pointer-events-none"
+                style={{
+                  background: 'radial-gradient(circle, rgba(124,0,33,0.18) 0%, transparent 65%)',
+                  transform: 'scale(1.5)',
+                }}
+              />
+              <img
+                src="/logo-without-bg.png"
+                alt="Pedro Rosa logo"
+                width={220}
+                height={220}
+                className="animate-float relative z-10 drop-shadow-lg object-contain"
+              />
+            </div>
+          </div>
 
           {/* CTAs */}
           <div
-            className={`fade-up ${loaded ? 'in-view' : ''} flex flex-wrap gap-4`}
+            className={`fade-up ${loaded ? 'in-view' : ''} flex flex-wrap gap-4 mt-0 md:mt-0`}
             style={{ transitionDelay: '240ms' }}
           >
             <a
               href="#projetos"
               className="bg-primary text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-accent transition-all duration-300 hover:scale-[1.04] shadow-md shadow-primary/20"
             >
-              Ver Projetos
+              {t('hero.cta_projects')}
             </a>
             <a
               href="#contato"
               className="border-2 border-primary text-primary font-semibold px-7 py-3.5 rounded-xl hover:bg-muted transition-all duration-300 hover:scale-[1.04]"
             >
-              Entrar em Contato
+              {t('hero.cta_contact')}
             </a>
           </div>
         </div>
 
-        {/* ── Right: Rose ── */}
+        {/* ── Right: Rose (desktop only) ── */}
         <div
-          className={`fade-in ${loaded ? 'in-view' : ''} flex justify-center items-center`}
+          className={`fade-in ${loaded ? 'in-view' : ''} hidden md:flex justify-center items-center`}
           style={{ transitionDelay: '100ms' }}
         >
           <div className="relative">
@@ -117,11 +141,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40">
-        <span className="text-xs text-gray-400 font-medium tracking-widest uppercase">scroll</span>
-        <span className="w-px h-8 bg-gradient-to-b from-gray-400 to-transparent" />
-      </div>
     </section>
   );
 }

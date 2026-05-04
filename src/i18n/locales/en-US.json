@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Full Stack Developer",
+    "greeting": "Hi, I'm",
+    "tagline": "Full-stack developer transforming ideas into memorable digital experiences. Clean code, thoughtful design, and high performance using cutting-edge technology.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in Touch"
+  },
+  "about": {
+    "label": "About me",
+    "title": "Who's behind the code",
+    "bio1": "I'm a Brazilian full-stack developer with experience across projects of all scales — from institutional websites to complex SaaS platforms. I've worked at digital agencies and independently for clients across diverse industries.",
+    "bio2": "I care about every detail: from backend architecture to the micro-animations that make interfaces feel fluid. I believe great software is that which solves real problems with elegance.",
+    "bio3": "When I'm not coding, I'm studying design or exploring new technologies.",
+    "stat_years": "Years of experience",
+    "stat_projects": "Projects delivered",
+    "stat_agencies": "Partner agencies",
+    "stack_title": "Stack & Tools",
+    "group_frameworks": "Frameworks",
+    "group_languages": "Languages",
+    "group_database": "Database",
+    "group_devops": "DevOps",
+    "group_ai": "AI"
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Selected Works",
+    "subtitle": "A selection of projects that showcase my technical ability and product vision.",
+    "visit": "Visit site",
+    "sindfaz_desc": "Institutional website for the Union of Workers of the Ministry of Finance, featuring a news area, announcements, and access to services for public servants.",
+    "calculacivil_desc": "Structural calculation platform for civil engineers, with dimensioning tools, structural verification, and technical report generation.",
+    "j8_desc": "Full-featured real estate website with property listings, advanced filter search, CRM integration, and development showcasing.",
+    "medel_desc": "Institutional portal for MED-EL targeting the Austrian and German markets — a global leader in cochlear implants and hearing solutions."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's build something together?",
+    "subtitle": "I'm open to new opportunities, freelance projects, and conversations about technology. Send me a message!"
+  },
+  "footer": {
+    "made_with": "Made with React & Tailwind CSS."
+  }
+}
