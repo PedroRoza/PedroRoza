@@ -44,5 +44,9 @@
   },
   "footer": {
     "made_with": "Made with React & Tailwind CSS."
+  },
+  "seo": {
+    "title": "Pedro Rosa | Full Stack Developer — Professional Websites & Web Apps",
+    "description": "Need a professional website built? Pedro Rosa is a full stack freelance developer — 7+ years, React, WordPress, Next.js, Node.js. Get a free quote!"
   }
 }

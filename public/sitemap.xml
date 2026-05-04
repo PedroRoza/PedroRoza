@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Portuguese (default) -->
+  <url>
+    <loc>https://pedro-rosa.dev.br/pt-br</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://pedro-rosa.dev.br/pt-br" />
+    <xhtml:link rel="alternate" hreflang="en"       href="https://pedro-rosa.dev.br/en" />
+    <xhtml:link rel="alternate" hreflang="es"       href="https://pedro-rosa.dev.br/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pedro-rosa.dev.br/pt-br" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://pedro-rosa.dev.br/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://pedro-rosa.dev.br/pt-br" />
+    <xhtml:link rel="alternate" hreflang="en"       href="https://pedro-rosa.dev.br/en" />
+    <xhtml:link rel="alternate" hreflang="es"       href="https://pedro-rosa.dev.br/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pedro-rosa.dev.br/pt-br" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://pedro-rosa.dev.br/es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://pedro-rosa.dev.br/pt-br" />
+    <xhtml:link rel="alternate" hreflang="en"       href="https://pedro-rosa.dev.br/en" />
+    <xhtml:link rel="alternate" hreflang="es"       href="https://pedro-rosa.dev.br/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pedro-rosa.dev.br/pt-br" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

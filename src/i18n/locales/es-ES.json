@@ -44,5 +44,9 @@
   },
   "footer": {
     "made_with": "Hecho con React & Tailwind CSS."
+  },
+  "seo": {
+    "title": "Pedro Rosa | Desarrollador Full Stack — Sitios Web Profesionales",
+    "description": "¿Necesitas un sitio web profesional? Pedro Rosa, dev full stack freelance con +7 años en React, WordPress, Next.js y Node.js. ¡Solicita un presupuesto!"
   }
 }
